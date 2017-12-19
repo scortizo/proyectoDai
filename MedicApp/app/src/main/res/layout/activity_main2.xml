@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.corti.medicapp.Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:id="@+id/tvNombre"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="agregar"
+            android:text="Agregar Paciente o ver Su información Principal"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="140dp" />
+
+        <LinearLayout
+
+            android:layout_width="368dp"
+            android:layout_height="428dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="75dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre Paciente" />
+
+            <EditText
+                android:id="@+id/paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="" />
+
+            <Button
+                android:id="@+id/notPacie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="notas"
+                android:text="Ver notas Paciente" />
+
+            <Button
+                android:id="@+id/med"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="medicinas"
+                android:text="Ver Medicinas" />
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wbView"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
